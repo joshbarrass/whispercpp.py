@@ -1,7 +1,7 @@
 Python bindings for whisper.cpp
 ===============================
 
-`pip install git+https://github.com/o4dev/whispercpp.py`
+`pip install git+https://github.com/jaimebw/whispercpp.py`
 
 ```python
 from whispercpp import Whisper
