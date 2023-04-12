@@ -8,8 +8,8 @@ if sys.platform == 'darwin':
     os.environ['CXXFLAGS'] = '-DGGML_USE_ACCELERATE -O3 -std=c++11'
     os.environ['LDFLAGS']  = '-framework Accelerate'
 else:
-    os.environ['CFLAGS']   = '-mavx -mavx2 -mfma -mf16c -O3 -std=gnu11'
-    os.environ['CXXFLAGS'] = '-mavx -mavx2 -mfma -mf16c -O3 -std=c++11'
+    os.environ['CFLAGS']   = '-O3 -std=gnu11'
+    os.environ['CXXFLAGS'] = '-O3 -std=c++11'
 
 ext_modules = [
     Extension(
